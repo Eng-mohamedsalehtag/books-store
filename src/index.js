@@ -6,7 +6,7 @@ import book from "../books/books.router.js";
 import { authMiddleware } from "../middlewares/auth.middlewares.js";
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT_NUMBER;
+const PORT = process.env.PORT_NUMBER || 5000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //user routes
