@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/users", user);
 
 //books routes
-app.use(authMiddleware);
+// app.use(authMiddleware);
 app.use("/books", book);
 
 app.use((error, req, res, next) => {
